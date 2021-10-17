@@ -128,11 +128,16 @@ footer {
 
 .content-list {
     gap: 1rem;
+    align-items: stretch;
+    justify-content: center;
+    justify-items: stretch;
 }
 
 .content-list>.card {
+    min-width: 500px;
     max-width: 600px;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .card li small {
