@@ -6,6 +6,30 @@
     --header: #2eb7c4;
     --accent: #ffc857;
     --active: #ffc857;
+    --fa-primary-color: #cf3acd;
+    --fa-secondary-color: #ffc857;
+    --fa-secondary-opacity: 1;
+}
+
+.swap {
+    --fa-primary-color: #ffc857;
+    --fa-secondary-color: #cf3acd;
+}
+
+i.fab {
+    color: var(--fa-secondary-color);
+}
+
+.black {
+    color: #666666 !important;
+}
+
+.red {
+    color: rgb(255, 0, 0) !important;
+}
+
+i.swap {
+    color: var(--fa-secondary-color);
 }
 
 html {
