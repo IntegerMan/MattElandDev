@@ -129,19 +129,28 @@ footer {
 
 .content-list {
     gap: 1rem;
-    align-items: stretch;
-    justify-content: center;
-    justify-items: stretch;
-}
-
-.content-list>.card {
-    min-width: 500px;
-    max-width: 600px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    justify-content: stretch;
 }
 
 .card li small {
     font-size: 0.75rem;
     color: var(--subtle);
+}
+
+.content-list>.card {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .content-list {
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-items: stretch;
+        justify-content: stretch;
+    }
+    .content-list>.card {
+        width: 500px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
 }
