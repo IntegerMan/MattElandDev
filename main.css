@@ -127,14 +127,15 @@ footer {
 }
 
 .content-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 300px;
     gap: 1rem;
-    justify-content: center;
 }
 
 .content-list>.card {
     max-width: 600px;
     flex-grow: 1;
+}
+
+.card li small {
+    font-size: 0.75rem;
+    color: var(--subtle);
 }
