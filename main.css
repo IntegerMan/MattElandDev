@@ -141,7 +141,30 @@ footer {
     width: 100%;
 }
 
+header.greeting {
+    display: grid;
+    grid-template-areas: "image" "headline" "blurb";
+}
+
+header.greeting > figure {
+    grid-area: image;
+}
+
+header.greeting > h1 {
+    grid-area: headline;
+}
+
+header.greeting > p {
+    grid-area: blurb;
+}
+
 @media only screen and (min-width: 1000px) {
+    header.greeting {
+        grid-template-areas: "image headline" "image blurb";
+    }
+    header.greeting > figure {
+        place-self: center;
+    }
     .content-list {
         flex-wrap: wrap;
         align-items: stretch;
