@@ -1,0 +1,56 @@
+:root {
+    --bg: rgb(39, 39, 63);
+    --text: #cccccc;
+    --subtle: #cccccc;
+    --link: #f9f3f9;
+    --header: #2eb7c4;
+    --accent: #ffc857;
+    --active: #ffc857;
+}
+
+html {
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: var(--header);
+}
+
+ul li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0.05rem 0.05rem #0a0a0a;
+}
+
+a:visited {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--active);
+}
+
+.accent {
+    color: var(--accent);
+    font-size: 120%;
+    font-weight: 650;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 2rem;
+    color: var(--subtle);
+    text-align: center;
+    font-size: 80%;
+}
