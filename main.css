@@ -2,10 +2,13 @@
     --bg: rgb(39, 39, 63);
     --text: #cccccc;
     --subtle: #cccccc;
+    --card-bg: rgb(81, 81, 112);
     --link: #f9f3f9;
     --header: #2eb7c4;
     --accent: #ffc857;
     --active: #ffc857;
+    --structure: rgb(39, 39, 63);
+    ;
     --fa-primary-color: #cf3acd;
     --fa-secondary-color: #ffc857;
     --fa-secondary-opacity: 1;
@@ -34,12 +37,27 @@ i.swap {
 
 html {
     background-color: var(--bg);
-    color: var(--text);
     padding: 1rem;
 }
 
-h1, h2 {
+html>body {
+    color: var(--text);
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 175%;
+    margin-bottom: 1rem;
+}
+
+h2 {
     color: var(--header);
+    font-size: 135%;
+    margin-bottom: 0.25em;
+}
+
+section {
+    margin-bottom: 2rem;
 }
 
 ul li {
@@ -52,6 +70,10 @@ a {
     text-decoration: none;
     font-weight: bold;
     text-shadow: 0.05rem 0.05rem #0a0a0a;
+}
+
+li i {
+    margin-right: 0.5rem;
 }
 
 a:visited {
@@ -68,13 +90,51 @@ a:hover {
     font-weight: 650;
 }
 
-header {
-    margin-bottom: 2rem;
+.card {
+    background-color: var(--card-bg);
+    color: var(--text);
+}
+
+.card .card-header-title {
+    color: var(--header);
+    text-shadow: 0.05rem 0.05rem #0a0a0a;
+}
+
+.card-content {
+    padding-top: 1rem;
+}
+
+.card-content small:first-child {
+    display: block;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--structure);
+    margin-bottom: 1rem;
+}
+
+main>header {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--accent);
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--accent);
+    padding-top: 1rem;
     color: var(--subtle);
     text-align: center;
     font-size: 80%;
+}
+
+.content-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.content-list>.card {
+    max-width: 600px;
+    flex-grow: 1;
 }
