@@ -6,9 +6,9 @@
     --link: #f9f3f9;
     --header: #2eb7c4;
     --accent: #ffc857;
+    --alternate: #cf3acd;
     --active: #ffc857;
     --structure: rgb(39, 39, 63);
-    ;
     --fa-primary-color: #cf3acd;
     --fa-secondary-color: #ffc857;
     --fa-secondary-opacity: 1;
@@ -17,6 +17,7 @@
 .swap {
     --fa-primary-color: #ffc857;
     --fa-secondary-color: #cf3acd;
+    color: #cf3acd;
 }
 
 i.fab {
@@ -141,20 +142,25 @@ footer {
     width: 100%;
 }
 
+header.card-header {
+    border-bottom: 1px solid var(--accent);
+    background-color: rgba(39, 39, 63, 0.35);
+}
+
 header.greeting {
     display: grid;
     grid-template-areas: "image" "headline" "blurb";
 }
 
-header.greeting > figure {
+header.greeting>figure {
     grid-area: image;
 }
 
-header.greeting > h1 {
+header.greeting>h1 {
     grid-area: headline;
 }
 
-header.greeting > p {
+header.greeting>p {
     grid-area: blurb;
 }
 
@@ -162,7 +168,7 @@ header.greeting > p {
     header.greeting {
         grid-template-areas: "image headline" "image blurb";
     }
-    header.greeting > figure {
+    header.greeting>figure {
         place-self: center;
     }
     .content-list {
