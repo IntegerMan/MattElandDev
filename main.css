@@ -37,6 +37,29 @@ i.swap {
     color: var(--fa-secondary-color);
 }
 
+.sz-caption {
+    display: none;
+}
+
+.sz-powered-by {
+    margin-top: 0.5rem;
+    --border-top: 1px solid var(--structure);
+    padding-top: 0.25rem;
+}
+
+.sz-powered-by>a {
+    font-weight: normal;
+    font-size: 85%;
+}
+
+.sz-group__title {
+    margin-top: 1rem;
+}
+
+.sz-group__title:first-child {
+    margin-top: 0;
+}
+
 html {
     background-color: var(--bg);
     padding: 1rem;
