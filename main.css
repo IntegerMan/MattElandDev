@@ -190,7 +190,7 @@ header.card-header {
 
 header.greeting {
     display: grid;
-    grid-template-areas: "image" "headline" "blurb";
+    grid-template-areas: "image" "headline" "social" "blurb";
 }
 
 header.greeting>figure {
@@ -204,10 +204,21 @@ header.greeting>h1 {
 header.greeting>p {
     grid-area: blurb;
 }
+header.greeting>nav {
+    grid-area: social;
+    display: flex;
+    margin-top: 0.5rem;
+}
+header.greeting>nav>ul {
+    display: flex;
+}
+header.greeting>nav>ul>li {
+    margin-right: 1rem;
+}
 
 @media only screen and (min-width: 1000px) {
     header.greeting {
-        grid-template-areas: "image headline" "image blurb";
+        grid-template-areas: "image headline" "image blurb" "image social";
     }
     header.greeting>figure {
         place-self: center;
