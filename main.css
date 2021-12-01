@@ -60,6 +60,23 @@ i.swap {
     margin-top: 0;
 }
 
+.featured .card-image img {
+    height: 100%;
+    width: auto;
+}
+
+.featured .card-content {
+    min-height: 85px;
+}
+
+.media, .media-content {
+    overflow-y: hidden;
+}
+
+.featured p.subtitle {
+    color: var(--fa-secondary-color);
+}
+
 html {
     background-color: var(--bg);
     padding: 1rem;
