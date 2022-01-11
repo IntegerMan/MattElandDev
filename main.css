@@ -188,6 +188,10 @@ header.card-header {
     background-color: var(--card-header);
 }
 
+hr {
+    border-bottom: 1px solid var(--accent);
+}
+
 header.greeting {
     display: grid;
     grid-template-areas: "image" "headline" "social" "blurb";
